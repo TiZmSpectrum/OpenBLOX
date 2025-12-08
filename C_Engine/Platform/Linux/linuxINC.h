@@ -12,9 +12,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "pc_function_debug.h"
-#include "pc_function_opnGL.h"
-#include "pc_function_time.h"
+#include "linux_function_debug.h"
+#include "linux_function_opnGL.h"
+#include "linux_function_time.h"
 
 float maxPartDist = 256;
 
@@ -26,7 +26,7 @@ void systemStart()  {
     platSingleApp = 0;
     startEngine = 1;
 
-    #ifndef WII_BUILD
+    #ifndef LINUX_BUILD
         if (getcwd(filePathForProgram, sizeof(filePathForProgram)) != NULL) {
             printf("Current working directory: %s\n", filePathForProgram);
         } else {
@@ -54,7 +54,7 @@ unsigned char key_e = 0;
 
 
 void processInput() {
-    #ifndef WII_BUILD
+    #ifndef LINUX_BUILD
         const Uint8 *state = SDL_GetKeyState(NULL);
         
         for (int i = 0; i < 2048; ++i) {

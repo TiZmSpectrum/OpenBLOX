@@ -1,3 +1,7 @@
+Fork for Linux support and WIP(hopefully soonTM) PSP port by TiZm
+test.rbxl is from Novetus by Bitl: https://github.com/Novetus/Novetus_src
+(it's the baseplate 512 map from Novetus.)
+__________________________________________________________________________________________________________
 [OpenBLOX, By Digi-Space Productions](https://www.youtube.com/@DigiSpaceProductions) (Todo, Fix thumbnail)
 
 discord accounts:

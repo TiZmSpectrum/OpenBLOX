@@ -46,18 +46,20 @@ char *strings_lingo[][3] = {
 #define STRING_LANGUAGE_SPANISH_ 1
 #define STRING_LANGUAGE_TOKIPONA 2
 
-char *strings_platform[][3] = {
-    {"Nintendo DS", "Nintendo DS", "ilo Si Esu"},
-    {"Nintendo DSi", "Nintendo DSi", "ilo Si Esu Ije"},
+char *strings_platform[][4] = {
+    {"Nintendo DS/DSI", "Nintendo DS/DSI", "ilo Si Esu"},
     {"Nintendo Wii", "Nintendo Wii", "ilo Wi"},
     {"PC", "Computadora", "ilo lipu"},
+    {"Linux", "Linux", "Linux"},
     {"SEGA Dreamcast", "SEGA Dreamcast", "ilo Seka Sikaso"},
     0
 };
 
 #define STRING_PLATFORM_DS______ 0
-#define STRING_PLATFORM_DSI_____ 1
-#define STRING_PLATFORM_PC______ 2
+#define STRING_PLATFORM_DSI_____ 0
+#define STRING_PLATFORM_WII_____ 1
+#define STRING_PLATFORM_PC______ 3
+#define STRING_PLATFORM_LINUX___ 4
 
 }
 
